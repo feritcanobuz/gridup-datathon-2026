@@ -1,0 +1,50 @@
+# Yalnizca cozum notebook'u, disaridan gelen gunluk tablolar, README ve
+# requirements paylasiliyor. Geri kalan her sey gelistirme ortami.
+
+# Yarisma verisi paylasilmaz
+data/*
+!data/notebook_dis_veri/
+data/notebook_dis_veri/*
+!data/notebook_dis_veri/gun_tablo.csv
+!data/notebook_dis_veri/gun_tablo_tam.csv
+
+# Gelistirme ortami
+.venv/
+analiz/
+src/
+submissions/
+teslim/
+video/
+research/
+catboost_info/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+Yeni klasör/
+
+# Ic notlar ve calisma dosyalari
+CLAUDE.md
+markdown.md
+DURUM.md
+DEVIR_*.md
+*_AGENT_PROMPT.md
+*_GOREV_*.md
+YENI_*.md
+ARASTIRMACI_*.md
+gediz_bilgiler.txt
+deney_defteri.csv
+*.py
+
+# Uretilen gonderim dosyalari
+submission*.csv
+
+# Notebook klasorundeki calisma dosyalari
+notebooks/*
+!notebooks/gridup_cozum.ipynb
+
+# Kimlik bilgileri, ASLA paylasilmaz
+.env
+.env.*
+.eptr2-tgt
+*.token
+*.key
