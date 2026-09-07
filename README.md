@@ -14,22 +14,22 @@ arası, metrik RMSLE.
 
 Tahmin tek bir modelin çıktısı değil, dört bileşenin toplamı.
 
-**Günlük endeks.** Bütün trafoları aynı gün aynı yönde iten mevsim ve takvim
+**Günlük endeks:** Bütün trafoları aynı gün aynı yönde iten mevsim ve takvim
 etkisi. Ridge ile hava ve takvimden kestiriliyor, güç sınıfına göre katmanlı.
 Doğrusal model bilinçli bir seçim: tahmin penceresindeki endeks eğitimde
 görülenin katlarına çıkabiliyor ve ağaç en yüksek yaprağında sıkışır.
 
-**Trafo seviyesi.** Dört kademeli grup önceliği, tahmin ufkuyla büyüyen
+**Trafo seviyesi:** Dört kademeli grup önceliği, tahmin ufkuyla büyüyen
 bayatlık büzülmesi, ölü trafolar için uyanma olasılıklı muafiyet, trafo bazlı
 mevsim genliği, ve ilçe çarpı güç sınıfı düzeyinde profil, gün deseni ile
 tatil düzeltmesi.
 
-**Cross-sectional model.** Test satırlarının beşte biri eğitim verisinde hiç
+**Cross-sectional model:** Test satırlarının beşte biri eğitim verisinde hiç
 görünmeyen trafolara ait ve naif hatanın üçte ikisini taşıyor. O blok için
 trafo başına bir satırlık ayrı bir model kuruluyor: LightGBM ve CatBoost,
 üçer tohum, dokuz özellik.
 
-**Düzeltme yönleri.** Her biri taban formülünün bıraktığı belirli bir artığı
+**Düzeltme yönleri:** Her biri taban formülünün bıraktığı belirli bir artığı
 hedefleyen vektörler. Katsayıları elle seçilmiyor; üç zaman katından, ölçekli
 cezalı kapalı formla çözülüyor. Ceza katsayısı da kat dışı doğrulama hatasına
 bakılarak ızgaradan seçiliyor. Bir yön ancak üç katın üçünde de aynı işareti
