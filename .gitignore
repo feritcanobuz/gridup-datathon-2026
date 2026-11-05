@@ -48,3 +48,6 @@ notebooks/*
 .eptr2-tgt
 *.token
 *.key
+
+# Power BI dosyasi veriyi icinde tasir, paylasilmaz
+*.pbix

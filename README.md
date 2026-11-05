@@ -73,10 +73,20 @@ EPİAŞ Şeffaflık verileri bilerek kullanılmadı: o seriler tahmin dönemine 
 gerçekleşmiş sistem tüketimini içeriyor ve bir dağıtım şirketi Nisan tahminini
 yaparken Temmuz'un gerçekleşenini bilemez.
 
+## Power BI panosu
+
+Aynı veri yarışmadan sonra SQL Server'da dört tabloya normalize edildi ve
+Power BI'da üç sayfalık bir şebeke izleme panosuna dönüştürüldü: genel bakış,
+anomali ve veri kalitesi, şebeke ve kapasite. Sayfa görüntüleri, veri modeli,
+DAX ölçüleri ve tasarım dosyaları [`powerbi/`](powerbi/) altında.
+
+[![Genel Bakış](powerbi/sayfa1_genel_bakis.png)](powerbi/README.md)
+
 ## Dizin yapısı
 
 ```
 notebooks/gridup_cozum.ipynb    çözümün tamamı, baştan sona koşar
 data/notebook_dis_veri/         günlük hava ve takvim tabloları
 requirements.txt                kullanılan sürümler
+powerbi/                        Power BI panosu: görüntüler, tema, ölçüler
 ```
